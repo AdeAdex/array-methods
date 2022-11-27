@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 30px;
+    background-image: linear-gradient(50deg, green 40%, orange 40%, navy 80%);
+  }
+
+  .linear-skew {
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(15deg, red 10%, orange 40%, teal 90%);
+    position: absolute;
+    transform: skewX(-50deg);
+  }
+
+  #main {
+    width: 50%;
+    margin: auto;
+    height: auto;
+    background-color: darkcyan;
+    box-shadow: 1px 1px 10px 10px rgba(2,2,255,.8);
+    position: static;
+    opacity: .8;
+  }
+
+  #welcomeText {
+    margin: 20px auto;
+    position: relative;
+    width: 50%;
+    display: flex;
+  }
+
+  
+  #welcomeText span {
+    color: purple;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: flips 10s infinite;
+    animation-delay: calc(.1s * var(--i))
+  }
+  
+  @keyframes flips {
+    0% {
+      transform: translateY(10px) ;
+      color: white;
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+  }
+
+  .options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .options-options {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    width: 50%;
+  }
+
+  label {
+    color: whitesmoke;
+    display: flex;
+    margin: auto 5px;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+
+  #myOptions {
+    padding: 12px 20px;
+    font-size: 15px;
+    margin: 30px auto;
+    border-radius: 5px;
+    width: 55%;
+  }
+
+
+  #myInput {
+    width: 50%;
+    margin: 0px auto;
+    padding: 15px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+ 
+  #myOutput {
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 40px auto;
+    font-family: fantasy;
+    color: maroon;
+  }
+
+  #resultBtn {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: darkgreen;
+    color: aliceblue;
+    cursor: pointer;
+  }
+
+  #resultBtn:hover {
+    background-color: green;
+  }
+
+  .details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+    background-color: gray;
+    transform: skewX(30deg);
+  }
+
+  span {
+    font-size: xx-large;
+    text-transform: capitalize;
+    margin: 0px auto;
+    color: aliceblue;
+    transform: skewX(-30deg);
+  }
+
+  #details {
+    margin: 5px auto;
+    font-size: 15px;
+    padding: 0px 20px;
+    font-weight: bolder;
+    color: blue;
+    transform: skewX(-30deg);
+  }
+
+  @media screen and (max-width: 600px) {
+    #main {
+        width: 100%;
+    }
+    .options-options {
+        width: 90%;
+    }
+    #myOptions {
+        width: 55%;
+    }
+    #myInput {
+        width: 90%;
+    }
+
+    .details {
+        width: 90%;
+    }
+  }

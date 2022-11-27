@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arrayMethod.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <div class="linear-skew"></div>
+        <div id="main">
+           
+            <div id="welcomeText">
+                <span style="--i:1">a</span>
+                <span style="--i:2">r</span>
+                <span style="--i:3">r</span>
+                <span style="--i:4">a</span>
+                <span style="--i:5">y &nbsp;</span>
+                <span style="--i:6">m</span>
+                <span style="--i:7">e</span>
+                <span style="--i:8">t</span>
+                <span style="--i:9">h</span>
+                <span style="--i:10">o</span>
+                <span style="--i:11">d</span>
+                <span style="--i:12">s</span>
+            </div>
+            <div class="options">
+                <div class="options-options">
+                    <label for="myOptions">Select an array method:</label>
+                    <select name="" id="myOptions">
+                        <option value="1">Push</option>
+                        <option value="2">Pop</option>
+                        <option value="3">Splice</option>
+                        <option value="4">Shift</option>
+                        <option value="5">Unshift</option>
+                        <option value="6">Sort</option>
+                        <option value="7">Reverse</option>
+                        <option value="8">Fill</option>
+                        <option value="9">Length</option>
+                        <option value="10">IsArray</option>
+                        <option value="11">Delete All</option>
+                    </select>
+                </div>
+                <input type="text" id="myInput" placeholder="Enter Your Todo">
+            </div>
+            <div id="myOutput"></div>
+            <button id="resultBtn" onclick="displayResult()">Result</button>
+            <div class="details">
+                <span>array method Description</span>
+                <div id="details"></div>
+            </div>
+        </div>
+    </div>
+    <script src="arrayMethod.js"></script>
+</body>
+</html>
